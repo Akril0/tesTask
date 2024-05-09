@@ -1,0 +1,19 @@
+
+.styledButton {
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  top: 0;
+  margin: 0;
+  padding-inline: 0;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background-color: rgba(84, 85, 91, 0);
+  transition: all 0.1s linear 0s;
+}
+
+.styledButton:hover {
+   background-color: rgba(84, 85, 91, 0.16);
+ }
