@@ -1,0 +1,6 @@
+.nftList{
+    margin: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 190px);
+    gap: 40px;
+}

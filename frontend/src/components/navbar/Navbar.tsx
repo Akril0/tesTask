@@ -1,22 +1,24 @@
 import {NavLink} from "react-router-dom";
-import RippleButton from "../buttons/rippleButton/RippleButton";
+import RippleButton
+    from "../buttons/rippleButton/RippleButton";
+import styles from './Navbar.module.css';
 
 
 const Navbar = () => {
     return (
-        <div>
-            <div>
-                <NavLink to="/add">
-                    <RippleButton>
-                        List
-                    </RippleButton>
-                </NavLink>
-                <NavLink to="/add">
-                    <RippleButton>
-                        Add
-                    </RippleButton>
-                </NavLink>
-            </div>
+        <div className={styles.navbar}>
+            <NavLink to="/"
+                     className={({isActive}) => styles.navlink + " " + (isActive ?  styles.activeNavlink : "")}>
+                <RippleButton>
+                    List
+                </RippleButton>
+            </NavLink>
+            <NavLink to="/add"
+                     className={({isActive}) => styles.navlink + " " + (isActive ? styles.activeNavlink :  "")}>
+                <RippleButton>
+                    Add
+                </RippleButton>
+            </NavLink>
         </div>
     );
 };

@@ -1,0 +1,98 @@
+.addNft {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    margin: 0 50px ;
+
+}
+.title{
+    grid-column-end: 3;
+    grid-column-start: 1;
+    text-align: center;
+}
+
+
+.form {
+    width: 320px;
+    margin: 10px auto;
+    display: flex;
+
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.form input {
+    padding: 0 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #707070;
+    height: 30px;
+    transition: all 0.1s linear 0s;
+
+}
+
+.form input:focus-visible {
+    border: none;
+    outline: 0;
+    box-shadow: 0 0 8px #707070;
+}
+
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputPriceHistory {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputPriceHistory input[type="number"] {
+    width: 150px;
+}
+
+.submitButton {
+    background-color: #46c762;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.submitButton button {
+    color: white;
+    font-size: 16px;
+    height: 100%;
+}
+.nftCard{
+    width: 100%;
+    overflow: hidden;
+    height: 250px;
+    background-color: #46c762;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.nftCard img{
+    margin: 0 auto;
+    width: 210px;
+    height: 210px;
+    border-radius: 7px;
+}
